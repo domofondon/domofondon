@@ -1,0 +1,28 @@
+.root {
+  padding: 30px;
+  max-width: 700px;
+
+  .title {
+    margin: 0 0 40px;
+  }
+
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .field {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 20px 20px;
+  }
+
+  .buttons {
+    margin: 40px auto 20px;
+    text-align: center;
+
+    > * {
+      margin: 0 10px;
+    }
+  }
+}

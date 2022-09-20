@@ -1,0 +1,145 @@
+.root {
+  box-shadow: 0px 1px 12px rgb(182 182 182 / 40%);
+  background: #2f7491;
+  color: #ffffffe6;
+  font-size: 15px;
+
+  @media (max-width: 1000px) {
+    position: fixed;
+    right: -100vw;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  &.mobilOpen {
+    @media (max-width: 1000px) {
+      right: 0;
+    }
+  }
+
+  .mobilMenu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #2f7491;
+    color: white;
+
+    @media (max-width: 1000px) {
+      display: flex;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #2f7491;
+      color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  .menu {
+    display: flex;
+    padding-left: 0;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      margin: 60px 0 10px;
+      padding: 20px 20px;
+    }
+
+    li {
+      margin: 0 40px;
+      list-style-type: none;
+
+      @media (max-width: 1000px) {
+        margin: 0 0 40px;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+    }
+
+    .active a {
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .userInfo {
+    margin-left: auto;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .paidUntil {
+    span {
+      margin-right: 10px;
+      color: #ffffff9c;
+      font-size: 12px;
+    }
+
+    &:after {
+      display: inline-block;
+      margin-bottom: -5px;
+      margin-left: 20px;
+      width: 1px;
+      height: 20px;
+      background-color: #ffffff7d;
+      content: '';
+
+      @media (max-width: 1000px) {
+        display: block;
+        margin: 20px 0;
+        width: 200px;
+        height: 1px;
+      }
+    }
+  }
+
+  .userName {
+    margin: 0 20px;
+
+    @media (max-width: 1000px) {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.mark {
+  margin-right: 20px;
+  color: #5bdc78;
+  font-weight: bold;
+
+  @media (max-width: 1000px) {
+    margin: 20px 0 0;
+  }
+}

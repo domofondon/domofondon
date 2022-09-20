@@ -1,0 +1,66 @@
+.root {
+  padding: 30px 0;
+}
+
+.user {
+  display: flex;
+  flex: 1 auto;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.titleWarp {
+  position: relative;
+  padding-right: 50px;
+}
+
+.info {
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+
+  @media (max-width: 1000px) {
+    margin: 0 0 20px;
+  }
+
+  dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .infoIcon {
+    display: block;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+}
+
+.infoEdit {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.facesWrap {
+  width: 100%;
+}
+
+.paid {
+  margin: 60px auto 20px;
+  max-width: 240px;
+}
+
+.infoRequest {
+  margin-top: 60px;
+}

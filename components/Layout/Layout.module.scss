@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+
+  &.landing {
+    background-image: none;
+  }
+
+  main {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    & > * {
+      width: 100%;
+    }
+  }
+}

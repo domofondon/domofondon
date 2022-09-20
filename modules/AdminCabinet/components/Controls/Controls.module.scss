@@ -1,0 +1,56 @@
+.root {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+
+  button:disabled {
+    opacity: 0.5;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.userButtons {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.form {
+  padding: 30px;
+
+  &User {
+    background-image: url('/images/bg.png');
+    background-repeat: repeat;
+  }
+}
+
+.form .closeForm {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.userCabinet {
+  background: #f7f7f7;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  > button {
+    margin: 0 10px;
+  }
+}

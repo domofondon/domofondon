@@ -1,0 +1,105 @@
+.root {
+  width: 100%;
+  max-width: 590px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: 58px;
+  padding: 5px 20px;
+
+  h3 {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.tableWrap {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  thead tr {
+    background-color: #2f7491;
+    color: white;
+  }
+
+  tbody tr {
+    background-color: white;
+
+    &:nth-child(2n + 1) {
+      background-color: #efefef;
+    }
+  }
+
+  tbody tr.selectedTr {
+    background: rgb(195 255 196 / 50%);
+  }
+
+  th,
+  td {
+    border: 1px solid #afafaf;
+    padding: 5px 10px;
+    font-weight: 300;
+  }
+
+  td {
+    width: 100px;
+    height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  td[data-content='name'] {
+    width: 200px;
+    max-width: 250px;
+  }
+
+  td[data-content='isSuperAdmin'] {
+    text-align: center;
+  }
+}
+
+.form {
+  max-width: 700px;
+  padding: 30px;
+
+  .title {
+    margin: 0 0 40px;
+  }
+
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .field {
+    margin: 0 20px 20px;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.formButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  > button {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.root {
+  margin: 40px 0;
+
+  h1 {
+    @media (max-width: 1000px) {
+      font-size: 25px;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}

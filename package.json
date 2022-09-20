@@ -1,0 +1,44 @@
+{
+  "name": "domofon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.92",
+    "@mui/material": "^5.9.2",
+    "dotenv": "^10.0.0",
+    "firebase": "^8.4.2",
+    "firebase-admin": "^11.0.1",
+    "fontsource-roboto": "^4.0.0",
+    "mobx": "^6.3.0",
+    "mobx-react-lite": "^3.2.0",
+    "next": "^11.0.1",
+    "nodemailer": "^6.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-verification-code-input": "^1.2.9",
+    "react-webcam": "^5.2.4",
+    "sass": "^1.32.12",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.7.1"
+  }
+}

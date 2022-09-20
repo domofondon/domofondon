@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  video,
+  img {
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.root .cameraIcon {
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 24px);
+  border-radius: 50%;
+  background-color: #eaeaead1;
+
+  &:hover {
+    background-color: #eaeaea;
+  }
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  justify-content: center;
+  width: 100%;
+
+  button {
+    margin: 0 10px;
+    background-color: #d4d4d4;
+    color: black;
+  }
+}

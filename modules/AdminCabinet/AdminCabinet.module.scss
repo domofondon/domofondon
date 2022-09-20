@@ -1,0 +1,158 @@
+.root {
+  padding: 30px 0;
+}
+
+.usersHeader {
+  display: flex;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  li {
+    display: -webkit-box;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 50px;
+    overflow: hidden;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    b {
+      margin-right: 10px;
+      vertical-align: bottom;
+    }
+  }
+
+  .user {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 20px;
+    padding: 20px 20px 12px;
+  }
+
+  .faces {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hide {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.tableWrap {
+  margin-bottom: 60px;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  max-width: 1240px;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  thead tr {
+    background-color: #2f7491;
+    color: white;
+  }
+
+  thead tr th.columnActive {
+    &:after {
+      content: '↓';
+      margin-left: 10px;
+      font-size: 24px;
+      line-height: 14px;
+    }
+  }
+
+  thead tr.sortDesk th.columnActive {
+    &:after {
+      content: '↑';
+    }
+  }
+
+  tbody tr {
+    background-color: white;
+
+    &:nth-child(2n + 1) {
+      background-color: #efefef;
+    }
+  }
+
+  tbody tr.selectedTr {
+    // box-shadow: 3px 3px 1px #00bd077a inset, -2px -2px 1px #00bd077a inset;
+    background: rgb(195 255 196 / 50%);
+  }
+
+  th,
+  td {
+    border: 1px solid #afafaf;
+    padding: 5px 10px;
+    font-weight: 300;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  td {
+    width: 100px;
+    height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  td[data-content='index'] {
+    width: 50px;
+  }
+
+  td[data-content='fullName'],
+  td[data-content='email'] {
+    width: 200px;
+    max-width: 250px;
+  }
+
+  td[data-content='address'] {
+    width: 250px;
+    max-width: 300px;
+  }
+
+  td[data-content='faces'],
+  td[data-content='facesProcessed'] {
+    width: 100px;
+    max-width: 100px;
+    text-align: center;
+  }
+}
+
+.admins {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.addresses {
+  display: inline-block;
+  margin-right: 60px;
+  vertical-align: top;
+}

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Roboto;
+}
+
+.h2 {
+  position: relative;
+  font-size: 32px;
+
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 250px;
+    height: 26px;
+    content: "";
+    background-color: #2f74911c;
+    z-index: -1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.MuiDialog-paper {
+  margin: 20px 10px!important;
+}
